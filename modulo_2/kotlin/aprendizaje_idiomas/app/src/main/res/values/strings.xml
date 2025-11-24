@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aprendizaje Idiomas</string>
+    <string name="welcome_message">¡Bienvenido a tu App de Idiomas!</string>
+    <string name="vocabulary">Vocabulario</string>
+    <string name="quiz">Quiz</string>
+    <string name="practice">Práctica</string>
+    <string name="progress">Progreso</string>
+    <string name="explore_words">Explora palabras por categorías</string>
+    <string name="test_knowledge">Pon a prueba tus conocimientos</string>
+    <string name="practice_flashcards">Practica con flashcards</string>
+    <string name="review_stats">Revisa tus estadísticas</string>
+</resources>

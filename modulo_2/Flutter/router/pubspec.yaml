@@ -1,0 +1,31 @@
+name: flutter_demo_dark
+description: Demo con estructura base y temporizador
+publish_to: "none"
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^17.0.0
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # Opcional: fuentes personalizadas
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: fonts/Inter-Regular.ttf
+  #       - asset: fonts/Inter-Bold.ttf
+  #         weight: 700

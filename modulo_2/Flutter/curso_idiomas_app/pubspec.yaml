@@ -1,0 +1,32 @@
+name: curso_idiomas_app
+description: Aplicación de curso de idiomas en línea
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  audioplayers: ^5.2.1
+  flutter_tts: ^3.8.3
+  animated_text_kit: ^4.2.2
+  fl_chart: ^0.66.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/audio/
+    - assets/flags/

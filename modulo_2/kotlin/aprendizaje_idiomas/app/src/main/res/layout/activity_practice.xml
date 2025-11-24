@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PracticeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPractice"
+            app:title="Práctica con Flashcards"
+            app:titleTextColor="@android:color/white"
+            app:navigationIcon="@drawable/ic_arrow_back" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="💡 Toca la tarjeta para ver la traducción"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardWord"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPractice"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/tvWordFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="🇪🇸 Hola"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/tvWordBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="🇺🇸 Hello"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="🇫🇷 Bonjour"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔊 OH-lah"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnShowTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:padding="16dp"
+            android:text="Mostrar traducción"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="16dp"
+            android:text="Siguiente palabra"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
